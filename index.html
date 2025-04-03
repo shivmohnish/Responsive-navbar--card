@@ -5,8 +5,8 @@
   <style>  
 
   body {
-    background-color: aqua;
-    color: brown;
+    background-color: rgb(188, 225, 190);
+    color: white;
   }
   /* Mobile Device  */
 @media (max-width:700px) {
@@ -29,33 +29,97 @@ h1 {
 
  }
 
-.product-container {
+.instrument-container {
     display: flex;
 }
 
-.product-card {
-    background-color: rgb(161, 127, 255);
-    width: 250px;
-    height: 300px;
-    border: 1px solid rgb(41, 12, 68);
-    border-radius: 20px;
+.instrument-card {
+    background-color: rgba(6, 43, 16, 0.956);
+    width: 300px;
+    border: none;
+    border-radius: 10px;
     margin: 25px;
     padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 2px rgb(20, 17, 17);
+}
+.instrument-img {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+.instrument-heading {
+    color: aqua;
+    font-family: cursive;
+    font-size: 25px;
+    margin: 0;
+} 
+.description {
+    color: white;
+    text-align: justify;
+    margin: 10px 15px;
+}
+.price {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
 }
 </style>
 </head>
 <body>
-    <div class="product-container">
+    <div class="instrument-container">
 
-        <div class="product-card"></div>
+        <div class="instrument-card">
+            <img src="tabla.png" alt="tabla-img" class="instrument-img">
+            <h1 class="instrument-heading">
+                Tabla
+            </h1>
+            ₹ <del>8000</del> <span class="price">₹ 6000/-</span>
+            <p class="description">The tabla is a pair of hand drums, a fundamental percussion instrument in Hindustani classical music of the Indian subcontinent, used for solo performances, accompaniment, and in ensembles.
+         </p>
+        </div>
 
-        <div class="product-card"></div>
+        <div class="instrument-card">
+            <img src="violin.png" alt="violin-img" class="instrument-img">
+            <h1 class="instrument-heading">
+                Violin
+            </h1>
+            ₹ <del>10000</del> <span class="price">₹ 7000/-</span>
+            <p class="description"> violin, bowed stringed musical instrument that evolved during the Renaissance from earlier bowed instruments: the medieval fiddle; its 16th-century Italian offshoot, the lira da braccio; and the rebec. 
+        </p>
+        </div>
 
-        <div class="product-card"></div>
+        <div class="instrument-card">
+            <img src="flute.png" alt="flute-img" class="instrument-img">
+            <h1 class="instrument-heading">
+                Flute
+            </h1>
+            ₹ <del>8000</del> <span class="price">₹ 5000/-</span>
+            <p class="description"> The flute is a member of a family of musical instruments in the woodwind group. Like all woodwinds, flutes are aerophones, producing sound with a vibrating column of air.
+        </p>
+        </div>
 
-        <div class="product-card"></div>
+        <div class="instrument-card">
+            <img src="harmonium.png" alt="harmonium-img" class="instrument-img">
+            <h1 class="instrument-heading">
+                Harmonium
+            </h1>
+            ₹ <del>15000</del> <span class="price">₹ 12000/-</span>
+            <p class="description">Harmonium is a stringed instrument made of wood, metal, brass, and cloth. A kind of a portable wooden box, it was originated in West Bengal.
+        </p>
+        </div>
 
-        <div class="product-card"></div>
+        <div class="instrument-card">
+            <img src="dholak.png" alt="dholak-img" class="instrument-img">
+            <h1 class="instrument-heading">
+                Dholak
+            </h1>
+            ₹ <del>10000</del> <span class="price">₹ 8000/-</span>
+            <p class="description">The dholak is a two-headed, hand-played, folk percussion instrument popular in Indian music culture, often used in traditional compositions like Qawwali, Lavni, Kirthan, and Bhangra. 
+        </p>
+        </div>
 
 
 
