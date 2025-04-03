@@ -106,6 +106,7 @@ h1 {
     z-index: 50;
     display: flex;
     padding: 5px 20px;
+    align-items: center;
 }
 .navbar-img{
     height: 60px;
@@ -114,8 +115,31 @@ h1 {
 }
 .heading-navbar {
     color:aqua;
-    font-family: cursive;
+    font-style: italic;
     font-size: 30px;
+}
+.navbar-menu-container {
+margin-left: auto;
+}
+.navbar-menu {
+    color: aqua;
+    font-size: 20px;
+    margin-left: 80px;
+    text-decoration: none;
+}
+
+.navbar-menu:hover {
+    transition: 0.5s;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 3px solid white;
+}
+.navbar-hamberger {
+    height: 30px;
+    margin-left: auto;
+    display: none;
 }
 /* Mobile Device  */
 @media (max-width:700px) {
@@ -127,6 +151,13 @@ body {
 }
 .icon {height: 25px;
 }
+.navbar-menu-container {
+    display:none;
+}
+.navbar-hamberger {
+    display: block;
+}
+
 }
  /* Tablet Device  */
  @media (min-width:700px) and (max-width:992px) {
@@ -138,6 +169,13 @@ body {
 }
 .icon {height: 30px;
 }
+.navbar-menu-container {
+    margin: auto;
+}
+.navbar-menu {
+    margin: 10px;
+}
+
 }
  /* Laptop Device  */
  @media (min-width:993px) and (max-width:1200px) {
@@ -157,6 +195,14 @@ body {
     <div class="navbar">
         <img src="music.png" alt="img" class="navbar-img">
         <h1 class="heading-navbar">Mohnish's Band</h1>
+        <div class="navbar-menu-container">
+        <a href="" class="navbar-menu">About</a>
+        <a href="" class="navbar-menu">Gallery</a>
+        <a href="" class="navbar-menu">Contact</a>
+        <a href="" class="navbar-menu">Membership</a>
+        <a href="" class="navbar-menu">Login</a>
+        <img src="hamburger.png" alt="img" class="navbar-hamberger">
+    </div>
     </div>
     <div class="instrument-container">
 
