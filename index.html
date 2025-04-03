@@ -6,30 +6,32 @@
 
   body {
     background-color: rgb(188, 225, 190);
+    margin: 0;
   }
   /* Mobile Device  */
 @media (max-width:700px) {
 
 body {
-    background-color: blue;
+    background-color: rgb(26, 85, 66);
 }
 h1 {
     font-size: 20px;
 }
 }
-
  /* Tablet Device  */
  @media (min-width:700px) and (max-width:992px) {
-
- }
-
+ body { 
+    background-color: rgb(78, 233, 135);
+}
+}
  /* Laptop Device  */
  @media (min-width:993px) and (max-width:1200px) {
-
  }
 
 .instrument-container {
     display: flex;
+    flex-wrap: wrap;
+    padding: 10px 60px;
 }
 
 .instrument-card {
@@ -44,7 +46,7 @@ h1 {
     position: relative;
 }
 .instrument-card:hover {
-    box-shadow: 1px 5px 5px 3px black;
+    box-shadow: 1px 3px 5px 3px black;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -65,8 +67,8 @@ h1 {
 .description {
     color: white;
     text-align: justify;
-    margin: 10px 15px;
-    
+    margin: 15px 15px;
+    height: 120px;
 }
 .price {
     color: white;
@@ -85,9 +87,77 @@ h1 {
     top: 15px;
     left: 15px;
 }
+.btn {
+    background-color: rgb(36, 180, 36);
+    margin: 5px auto;
+    padding: 8px 20px;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: rgb(9, 56, 49);
+    height: 80px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    padding: 5px 20px;
+}
+.navbar-img{
+    height: 60px;
+    margin: 10px 20px;
+    
+}
+.heading-navbar {
+    color:aqua;
+    font-family: cursive;
+    font-size: 30px;
+}
+/* Mobile Device  */
+@media (max-width:700px) {
+body {
+    background-color: aqua;
+}
+.instrument-card {
+    width: 300px;
+}
+.icon {height: 25px;
+}
+}
+ /* Tablet Device  */
+ @media (min-width:700px) and (max-width:992px) {
+ body { 
+    background-color: rgb(78, 233, 135);
+}
+.instrument-card {
+    width: 400px;
+}
+.icon {height: 30px;
+}
+}
+ /* Laptop Device  */
+ @media (min-width:993px) and (max-width:1200px) {
+body {
+    background-color: blueviolet;
+.instrument-card {
+    width: 350px;
+}
+.icon {
+    height: 35px;
+}
+} 
+}
 </style>
 </head>
 <body>
+    <div class="navbar">
+        <img src="music.png" alt="img" class="navbar-img">
+        <h1 class="heading-navbar">Mohnish's Band</h1>
+    </div>
     <div class="instrument-container">
 
         <div class="instrument-card">
@@ -99,6 +169,9 @@ h1 {
             <p class="description">The tabla is a pair of hand drums, a fundamental percussion instrument in Hindustani classical music of the Indian subcontinent, used for solo performances, accompaniment, and in ensembles.
          </p>
          <img src="record (2).png" alt="icon" class="icon">
+         <button class="btn">
+            Order Now
+         </button>
         </div>
 
         <div class="instrument-card">
@@ -110,6 +183,9 @@ h1 {
             <p class="description"> violin, bowed stringed musical instrument that evolved during the Renaissance from earlier bowed instruments: the medieval fiddle; its 16th-century Italian offshoot, the lira da braccio; and the rebec. 
         </p>
         <img src="record (1).png" alt="icon" class="icon">
+        <button class="btn">
+            Order Now
+         </button>
         </div>
 
         <div class="instrument-card">
@@ -121,6 +197,9 @@ h1 {
             <p class="description"> The flute is a member of a family of musical instruments in the woodwind group. Like all woodwinds, flutes are aerophones, producing sound with a vibrating column of air.
         </p>
         <img src="record (2).png" alt="icon" class="icon">
+        <button class="btn">
+            Order Now
+         </button>
         </div>
 
         <div class="instrument-card">
@@ -132,6 +211,9 @@ h1 {
             <p class="description">Harmonium is a stringed instrument made of wood, metal, brass, and cloth. A kind of a portable wooden box, it was originated in West Bengal.
         </p>
         <img src="record (1).png" alt="icon" class="icon">
+        <button class="btn">
+            Order Now
+         </button>
         </div>
 
         <div class="instrument-card">
@@ -143,6 +225,9 @@ h1 {
             <p class="description">The dholak is a two-headed, hand-played, folk percussion instrument popular in Indian music culture, often used in traditional compositions like Qawwali, Lavni, Kirthan, and Bhangra. 
         </p>
         <img src="record (1).png" alt="icon" class="icon">
+        <button class="btn">
+            Order Now
+         </button>
         </div>
         
 
